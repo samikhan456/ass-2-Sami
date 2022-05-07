@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="style.css">
+    <title>Sports</title>
+
+
+
+</head>
+<body>
+  
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a href="#" class="navbar-brand"><b>MySports</b></a>  		
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+     
+        <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+            <div class="navbar-nav">
+                <a href="#" class="nav-item nav-link">Home</a>
+                <a href="#" class="nav-item nav-link">About</a>			
+                <div class="nav-item dropdown">
+                    <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle">Sports</a>
+                    <div class="dropdown-menu">					
+                        <a href="#" class="dropdown-item">Cricket</a>
+                        <a href="#" class="dropdown-item">Football</a>
+                        <a href="#" class="dropdown-item">Tennis</a>
+                        <a href="#" class="dropdown-item">Field Hockey</a>
+                        <a href="#" class="dropdown-item">Volleyball</a>
+                        <a href="#" class="dropdown-item">Baseball</a>
+                    </div>
+                </div>
+                <a href="#" class="nav-item nav-link active">Video</a>
+                <a href="#" class="nav-item nav-link">Live TV</a>
+                <a href="#" class="nav-item nav-link">Contact</a>
+            </div>
+            <form class="navbar-form form-inline">
+                <div class="input-group search-box">								
+                    <input type="text" id="search" class="form-control" placeholder="Search here...">
+                    <div class="input-group-append">
+                        <span class="input-group-text">
+                            <i class="material-icons">&#xE8B6;</i>
+                        </span>
+                    </div>
+                </div>
+            </form>
+            <div class="navbar-nav ml-auto action-buttons">
+                <div class="nav-item dropdown">
+                    <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle mr-4">Login</a>
+                    <div class="dropdown-menu action-form">
+                        <form action="/examples/actions/confirmation.php" method="post">
+                            <p class="hint-text">Sign in with your social media account</p>
+                            <div class="form-group social-btn clearfix">
+                                <a href="#" class="btn btn-secondary facebook-btn float-left"><i class="fa fa-facebook"></i> Facebook</a>
+                                <a href="#" class="btn btn-secondary twitter-btn float-right"><i class="fa fa-twitter"></i> Twitter</a>
+                            </div>
+                            <div class="or-seperator"><b>or</b></div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Username" required="required">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password" required="required">
+                            </div>
+                            <input type="submit" onclick="validation()" class="btn btn-primary btn-block" value="Login">
+                            <div class="text-center mt-2">
+                                <a href="#">Forgot Your password?</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle sign-up-btn">Sign up</a>
+                    <div class="dropdown-menu action-form">
+                        <form action="index.html"  method="post">
+                            <p class="hint-text">Fill in this form to create your account!</p>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Username" required="required">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password" required="required">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Confirm Password" required="required">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-check-label"><input type="checkbox" required="required"> I accept the <a href="#">Terms &amp; Conditions</a></label>
+                            </div>
+                            <input type="submit" onclick="validation()" class="btn btn-primary btn-block" value="Sign up">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <h1>Sports</h1>
+    <div class="container">
+        <img src="https://www.pcb.com.pk/timthumb.php?src=images/news_images/featured_images/9da04700e89e.jpg&w=675" alt="Cricket">
+        <img src="https://sm.mashable.com/t/mashable_pk/photo/default/football_7u28.1248.jpg" alt="Football">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Tennis_Racket_and_Balls.jpg/330px-Tennis_Racket_and_Balls.jpg" alt="Tennis">
+        <img src="https://images.indianexpress.com/2021/11/jr-hockey-team-India.jpg" alt="Hockey">
+        <img src="https://cdn.britannica.com/80/162480-050-8736AC79/People-beach-volleyball.jpg" alt="Volleyball">
+        <img src="https://www.history.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTU3ODc4NjAzNTE3NDcwMDI1/ask-history-who-invented-basketball-istock_000006523151large-2.jpg" alt="Basketball">
+        <img src="https://play-lh.googleusercontent.com/1yRPXa0wUlcJLyuGpgbS5kJe1UdNQSanv1OOdtqjI4zRPcvL9MFNUbJ3gE9dlVqAecFW" alt="Archery">
+        <img src="https://i.ytimg.com/vi/uBoKILQyT70/maxresdefault.jpg" alt="Wrestling">
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+          <div class="col-sm-4">
+            <h3>Tennis</h3>
+            <p>    Widely recognised as the most popular individual sport in the world, tennis is played by an estimated number of 60 million men and women around the world, according to a ranking by Topend Sports. The doubles version of the sport is also extremely popular around the world, which is why it ranks on this 10 most participated sports list.</p>
+      </p>
+          </div>
+          <div class="col-sm-4">
+            <h3>Basketball</h3>
+            <p>        The Federation of International Basketball Associations (FIBA) estimates that a minimum of 450 million people play the sport around the world, be it recreationally or through structured competitions. Legendary figures in the world of basketball such as Michael Jordan and Kobe Bryant, have aided the rise in global popularity of the sport from its American roots.</p>
+      </p>
+          </div>
+          <div class="col-sm-4">
+            <h3>Field Hockey</h3>        
+            <p>        This fast paced sport is played by men and women in over 100 countries on 5 continents around the world. A firm favorite at the Olympic Games, field hockey is a highly technical sport, played by 10 outfield players plus a goalkeeper and its rules differ from the Ice hockey variation of the sport.
+      </p>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+              <h3>Volleyball</h3>
+              <p>    Originating from America, volleyball boasts an impressive estimated global participation figure of 998 million people. Indoor and outdoor versions of the sport are played all over the world, with over 220 affiliated national federations registered to volleyball’s global governing body the ‘FIVB’. </p>
+              
+            </div>
+            <div class="col-sm-4">
+              <h3>Cricket</h3>
+              <p>        The majority of participants of this sport come from Australia, India, Pakistan, South Africa and the UK, but cricket is also on the rise in other countries all over the world. The International Cricket Council (ICC) identified that an impressive 125 countries around the world play the sport.</p>
+            
+            </div>
+            <div class="col-sm-4">
+              <h3>Baseball</h3>        
+              Historically baseball was more popular in America than anywhere else in the world but the sport is now becoming increasingly popular in other countries such as Japan. Softball is the female version of the game, and it is estimated by the World Baseball Softball Confederation (WBSC) that 65 million people play either baseball or softball in over 140 countries.</p>
+         
+            </div>
+          </div>
+      </div>
+    <center>
+        <div class="conatiner">
+    <form action="#" method="post"> 
+        <table>
+        <h2>Quary/Suggestions</h2>
+        <tr>
+            <td>
+                From : 
+            </td>
+            <td>
+                <input type="Email" placeholder="Sender email address" name="">
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                Subject : 
+            </td>
+            <td>
+                <input type="text" placeholder="Subject" name="">
+            </td>
+        </tr>
+         <tr>
+               <td>Phone : </td>
+               <td>
+                   <select>
+                       <option>+92</option>
+                       <option>+93</option>
+                       <option>+974</option>
+                       <option>+971</option>
+                       <option>+91</option>
+                       <option>+977</option>
+                       <option>+33</option>
+                   </select>
+               </td>
+               <td>
+                   <input type="Phone" name="">
+               </td>
+           </tr>
+    
+           <tr>
+               <td>Message : </td>
+               <td> <textarea name="Message" id="Message" cols="30" rows="10"></textarea></td></tr>
+               <tr>
+               <td >
+                    <center><input type="submit" value="Send" name=""></center>
+               </td>
+           </tr>
+        </table>
+        
+    </form>
+</div>
+</center>
+<div class="hidden messages">
+<button onclick="messageFunction()">Message</button>
+</div>
+<footer class="bg-dark text-center text-white">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Copyright:
+    <a class="text-white" href="#">Sami Ullah Khan</a></div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
